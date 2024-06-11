@@ -3,24 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Data Table</title>
+
     <link rel="stylesheet" href="./style.css" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0-alpha3/css/bootstrap.min.css"
     />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css
 "
     />
+    l̥
     <link
       rel="stylesheet"
-      href="https://cdn.datatables.net/2.0.8/css/dataTables.dataTables.min.css"
+      href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/responsive/2.4.1/css/responsive.bootstrap5.min.css"
+    />
+
+    <title>DataTable</title>
   </head>
+
   <body id="body-pd">
     <header class="header" id="header">
       <div class="header_toggle">
@@ -63,11 +69,11 @@
         </div>
       </nav>
     </div>
-    <div class="height-100 main w-100 table-responsive">
+    <div class="container p-3 my-5 bg-light">
       <table
         id="example"
-        class="display responsive no-wrap"
-        style="overflow: auto"
+        class="table table-striped nowrap"
+        style="width: 100%"
       >
         <thead>
           <tr>
@@ -99,81 +105,100 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Data 1</td>
-            <td>Data 2</td>
-            <td>Data 3</td>
-            <td>Data 4</td>
-            <td>Data 5</td>
-            <td>Data 6</td>
-            <td>Data 7</td>
-            <td>Data 8</td>
-            <td>Data 9</td>
-            <td>Data 10</td>
-            <td>Data 11</td>
-            <td>Data 12</td>
-            <td>Data 13</td>
-            <td>Data 14</td>
-            <td>Data 15</td>
-            <td>Data 16</td>
-            <td>Data 17</td>
-            <td>Data 18</td>
-            <td>Data 19</td>
-            <td>Data 20</td>
-            <td>Data 21</td>
-            <td>Data 22</td>
-            <td>Data 23</td>
-            <td>Data 24</td>
-            <td>Data 25</td>
-          </tr>
-          <tr>
-            <td>Data 21</td>
-            <td>Data 22</td>
-            <td>Data 23</td>
-            <td>Data 24</td>
-            <td>Data 25</td>
-            <td>Data 26</td>
-            <td>Data 27</td>
-            <td>Data 28</td>
-            <td>Data 29</td>
-            <td>Data 210</td>
-            <td>Data 211</td>
-            <td>Data 212</td>
-            <td>Data 213</td>
-            <td>Data 214</td>
-            <td>Data 215</td>
-            <td>Data 216</td>
-            <td>Data 217</td>
-            <td>Data 218</td>
-            <td>Data 219</td>
-            <td>Data 220</td>
-            <td>Data 221</td>
-            <td>Data 222</td>
-            <td>Data 223</td>
-            <td>Data 224</td>
-            <td>Data 225</td>
-          </tr>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+                <td>Data 3</td>
+                <td>Data 4</td>
+                <td>Data 5</td>
+                <td>Data 6</td>
+                <td>Data 7</td>
+                <td>Data 8</td>
+                <td>Data 9</td>
+                <td>Data 10</td>
+                <td>Data 11</td>
+                <td>Data 12</td>
+                <td>Data 13</td>
+                <td>Data 14</td>
+                <td>Data 15</td>
+                <td>Data 16</td>
+                <td>Data 17</td>
+                <td>Data 18</td>
+                <td>Data 19</td>
+                <td>Data 20</td>
+                <td>Data 21</td>
+                <td>Data 22</td>
+                <td>Data 23</td>
+                <td>Data 24</td>
+                <td>Data 25</td>
+              </tr>
+              <tr>
+                <td>Data 21</td>
+                <td>Data 22</td>
+                <td>Data 23</td>
+                <td>Data 24</td>
+                <td>Data 25</td>
+                <td>Data 26</td>
+                <td>Data 27</td>
+                <td>Data 28</td>
+                <td>Data 29</td>
+                <td>Data 210</td>
+                <td>Data 211</td>
+                <td>Data 212</td>
+                <td>Data 213</td>
+                <td>Data 214</td>
+                <td>Data 215</td>
+                <td>Data 216</td>
+                <td>Data 217</td>
+                <td>Data 218</td>
+                <td>Data 219</td>
+                <td>Data 220</td>
+                <td>Data 221</td>
+                <td>Data 222</td>
+                <td>Data 223</td>
+                <td>Data 224</td>
+                <td>Data 225</td>
+              </tr>
         </tbody>
       </table>
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="./script.js"></script>
-    <script src="https://cdn.datatables.net/2.0.8/js/dataTables.min.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.datatables.net/fixedheader/3.1.9/js/dataTables.fixedHeader.min.js"
-    ></script>
+
+    <!-- DataTable JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
+    <script src="https://cdn.datatables.net/responsive/2.4.1/js/responsive.bootstrap5.min.js"></script>
+
     <script>
+      $("#example").DataTable({
+        responsive: true,
+        pageLength:1,
+      });
+
       $(document).ready(function () {
-        $("#example").DataTable({
-          responsive: true,
-          pageLength: 1,
-        });
+        const showNavbar = (toggleId, navId, bodyId, headerId) => {
+          const $toggle = $(`#${toggleId}`);
+          const $nav = $(`#${navId}`);
+          const $bodypd = $(`#${bodyId}`);
+          const $headerpd = $(`#${headerId}`);
+
+          if (
+            $toggle.length &&
+            $nav.length &&
+            $bodypd.length &&
+            $headerpd.length
+          ) {
+            $toggle.on("click", () => {
+              $nav.toggleClass("show");
+              $toggle.toggleClass("bx-x");
+              $bodypd.toggleClass("body-pd");
+              $headerpd.toggleClass("body-pd");
+            });
+          }
+        };
+
+        showNavbar("header-toggle", "nav-bar", "body-pd", "header");
       });
     </script>
   </body>
